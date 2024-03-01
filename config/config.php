@@ -1,6 +1,5 @@
 <?php
+global $config;
 
-    global $config;
-
-    $config = array();
-    define($BASE_URL, "http://localhost/api/");
+$config = array();
+define("BASE_URL","http://localhost/api/");

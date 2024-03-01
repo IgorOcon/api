@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>API</title>
 </head>
 <body>
-    <main>
-        <?php $this->loadView($viewName, $viewData); ?>
-    </main>
-    
+	<main>
+		<?php $this->loadView($viewName, $viewData); ?>
+	</main>
 </body>
 </html>
