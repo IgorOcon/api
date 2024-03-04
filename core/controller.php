@@ -1,6 +1,8 @@
 <?php
 class controller{
 
+	protected $db;
+
 	public function __construct(){
 		global $config;
 	}

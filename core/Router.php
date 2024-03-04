@@ -17,7 +17,8 @@ class Router{
 				echo 'Erro: Callback não função';
 			}
 		}else{
-			echo 'Erro: Rota não existe';
+			header("Location: ".BASE_URL.'404');
+			exit;
 		}
 	}
 }

@@ -1,10 +1,12 @@
 <?php
     //inciar sessoes
         session_start();
+        require "config/config.php";
+        require "config/database.php";
 
     //setando configurações
     spl_autoload_register(
-        function($class){
+        function($class){ 
             if(file_exists('controllers/'.$class.'.php')){
                 require_once 'controllers/'.$class.'.php';
             }elseif(file_exists('models/'.$class.'.php')){

@@ -10,7 +10,13 @@ class homeController extends controller{
 
 	public function index(){
 
+		$this->dados['nome'] = 'Igor Daniel';
+
 		$this->loadTemplate('home', $this->dados);
 	}
 
+	public function sobre(){
+
+		$this->loadTemplate('sobre', $this->dados);
+	}
 }

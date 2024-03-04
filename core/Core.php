@@ -8,6 +8,10 @@ class Core{
 
 		//configurar as rotas
 		$router->addRoute('/', array(new homeController(), 'index'));
+		$router->addRoute('/sobre', array(new homeController(), 'sobre'));
+
+		//rota de paginas nao encontradas
+		$router->addRoute('/404', array(new notfoundController(), 'index'));
 
 		//lidando com a requisição
 		$route = isset($_GET['route'])?'/'.$_GET['route']:'/';
