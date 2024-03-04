@@ -10,6 +10,8 @@ class homeController extends controller{
 
 	public function index(){
 
+		$produto = new Produto();
+		
 		$this->dados['nome'] = 'Igor Daniel';
 
 		$this->loadTemplate('home', $this->dados);
